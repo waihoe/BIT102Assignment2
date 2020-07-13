@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/1ba7b41d28.js" crossorigin="anonymous"></script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- style sheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+    function validateForm() {
+      var name = document.reglogform.name.value;
+      var email = document.reglogform.email.value;
+      var password = document.reglogform.password.value;
+
+      if (name == null || name == "") {
+        alert("Name can't be blank");
+        return false;
+      } else if (email == null || email == "") {
+        alert("Email must be filled");
+        return false;
+      } else if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return false;
+      }
+    }
+
+    var date = new Date();
+    $(".copyright-year").text(date.getFullYear());
+  </script>
+
+  <title>Welcome to BookDoc</title>
+</head>
+
+<body class="naoya">
+  <nav class="navbar bg-light">
+    <h1>
+      <a href="index.html">
+        <i class="fas fa-book-medical"></i> BookDoc
+      </a>
+    </h1>
+    <ul>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="marketplace.html">Marketplace</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+  <section class="container-register">
+    <h1 class="large text-register">
+      Sign Up
+    </h1>
+    <p class="lead">
+      <i class="fas fa-user"></i> Create Your Account
+    </p>
+    <form action="" class="form" name="reglogform" onsubmit="validateForm()">
+      <div class="form-setting">
+        <input type="text" placeholder="Name" name="name">
+      </div>
+      <div class="form-setting">
+        <input type="email" placeholder="Email Address" name="email">
+      </div>
+      <div class="form-setting">
+        <input type="password" placeholder="Password" name="password">
+      </div>
+      <div class="form-setting">
+        <input type="password" placeholder="Password2" minlength="6">
+      </div>
+      <input type="submit" class="btn btn-red">
+    </form>
+    <p class="register">
+      Already have an account? <a class="link-login" href="login.html">Sign In</a>
+    </p>
+
+  </section>
+  <script type="text/javascript" src="javascript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/1ba7b41d28.js" crossorigin="anonymous"></script>
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<!-- style sheet -->
+	<link rel="stylesheet" href="css/styles.css">
+	<title>BookDoc Marketplace</title>
+</head>
+
+<body>
+	<nav class="navbar bg-light">
+		<h1>
+			<a href="index.html">
+				<i class="fas fa-book-medical"></i> BookDoc
+
+			</a>
+		</h1>
+		<ul>
+			<li>
+				<a href="aboutus.html">About us</a>
+			</li>
+			<li>
+				<a href="booking.html">Booking</a>
+			</li>
+			<li>
+				<a href="marketplace.html">Marketplace</a>
+			</li>
+			<li>
+				<a href="register.html">Register</a>
+			</li>
+			<li>
+				<a href="login.html">Login</a>
+			</li>
+			<li>
+				<a href="#">Shopping Cart
+					<i class="fa fa-shopping-basket" aria-hidden="true" style="color: white"></i>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="topsection">
+		<div class="product_cat">
+			<div class="cat_title">
+				<a>SHOP BY CATEGORIES</a>
+			</div>
+			<div>
+				<ul style="padding-top: 10px;text-align: center">
+					<li>
+						<a href="#">Cleaning</a>
+					</li>
+					<li>
+						<a href="#">Disinfectant</a>
+					</li>
+					<li>
+						<a href="#">Supplements</a>
+					</li>
+					<li>
+						<a href="#">Beauty</a>
+					</li>
+					<li>
+						<a href="#">Sport</a>
+					</li>
+					<li>
+						<a href="#">Bath</a>
+					</li>
+					<li>
+						<a href="#">Work Out</a>
+					</li>
+					<li>
+						<a href="#">Accessories</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="market_img/banner-2017-cardiology-1024x420.png" class="banner_img">
+				</div>
+				<div class="mySlides fade">
+					<img src="market_img/533A48D5-496A-48B3-B21F-E2B48E0A257B.JPEG" class="banner_img">
+				</div>
+				<div class="mySlides fade">
+					<img src="market_img/Screenshot 2020-07-13 at 3.50.57 PM.png" class="banner_img">
+				</div>
+				<div style="text-align:center;margin-top: -5%;">
+					<span class="dot"></span>
+					<span class="dot"></span>
+					<span class="dot"></span>
+				</div>
+			</div>
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slideIndex++;
+					if (slideIndex > slides.length) { slideIndex = 1 }
+					for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					}
+					slides[slideIndex - 1].style.display = "block";
+					dots[slideIndex - 1].className += " active";
+					setTimeout(showSlides, 4000); // Change market_img every 2 seconds
+				}
+
+			</script>
+		</div>
+	</div>
+	<section class="productlists" style="margin-top:5%;">
+		<div class="product_list1">
+			<div style="background: #f3f3f3;">
+				<img src="market_img/IMG_4046.jpg" class="img_size1" />
+			</div>
+			<div class="product_desc1">
+				<a class="ptitle" style="font-weight: bold">Swisse - High Strength Cranberry</a>
+				<p>RM26.00</p>
+			</div>
+		</div>
+		<div class="product_list2">
+			<div style="background: #f3f3f3;">
+				<img src="market_img/IMG_4068.jpg" class="img_size1" />
+			</div>
+			<div class="product_desc1">
+				<a class="ptitle" style="font-weight: bold">3-Ply Surgical Mask</a>
+				<p>RM45.00</p>
+			</div>
+		</div>
+		<div class="product_list2">
+			<div style="background: #f3f3f3;">
+				<img src="market_img/IMG_4062.jpg" class="img_size1" />
+			</div>
+			<div class="product_desc1">
+				<a class="ptitle" style="font-weight: bold">Dettol - Hand Sanitizer</a>
+				<p>RM6.00</p>
+			</div>
+		</div>
+	</section>
+	<section class="marketplace_desc">
+		<a class="m_desc">HEALTHY FOR YOU</a>
+		<a>THIS IS THE MARKETPLACE WHERE IS SELLING THE PRODUCTS ITEM FOR YOUR HEALTH.</a>
+	</section>
+	<section class="productcategories">
+		<div class="product_list3">
+			<div class="p_list">
+				<a style="font-weight: bold">NEW ARRIVAL PRODUCT</a>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4039.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">WHEY Protein</a>
+								<a>RM40.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4061.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">Dettol - Disinfectant Spray</a>
+								<a>RM11.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4052.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">Hand Sanitizer Wipes</a>
+								<a>RM4.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p_list p_list2">
+				<a style="font-weight: bold">FEATURED PRODUCT</a>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4054.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">Differin Acne Killer</a>
+								<a>RM34.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4041.jpg">
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">Vitamin C</a>
+								<a>RM17.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4038.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">Vitamin C Gummies</a>
+								<a>RM25.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="p_list p_list2">
+				<a style="font-weight: bold">BEST SELLER PRODUCT</a>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4068.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">3-PLY Surgical Mask</a>
+								<a>RM45.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4049.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a sclass="p_title">Swisse - Calcium + Vitamin D</a>
+								<a>RM20.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 15%">
+					<div>
+						<div class="img_size2">
+							<img src="market_img/IMG_4051.jpg" />
+						</div>
+						<div class="p_desc">
+							<div class="p_desc2">
+								<a class="p_title">KF94 Face Mask</a>
+								<a>RM25.00</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<p class="copyright">© 2020 BookDoc</p>
+	</section>
+</body>
+
+</html>
